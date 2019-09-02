@@ -4,6 +4,11 @@
 <head runat="server">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><?php echo isset($pageTitle) ? $pageTitle : "Default Title" ?></title>
+    <!-- Additional tags here -->
+    <?php if (function_exists('customPageHeader')){
+      customPageHeader();
+    }?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="Content/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Content/andreaStyle.css" />
@@ -27,3 +32,7 @@
         </div>
 </div>
 </div>
+<!-- body container starts here -->
+<div class="container-fluid mx-auto">
+            <div class="row" style="background-color: #7cafde;">
+                <div class="col-md-4 col-xl-3 col-lg-4 col-sm-12 col-xs-12">
