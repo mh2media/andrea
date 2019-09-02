@@ -1,0 +1,249 @@
+﻿@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font: 14px Trebuchet MS, Verdana, Arial, sans-serif;
+    text-align: left; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+    color: #000000;
+    margin-bottom: -20px !important;
+    padding-bottom: -20px;
+}
+
+#blackRow {
+    background-color: #000000 !important;
+    width: 100%;
+    z-index: 10;
+}
+
+#sidebar1 {
+    float: left; /* since this element is floated, a width must be given */
+    width: 250px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+    background: #7CAFDE; /* the background color will be displayed for the length of the content in the column, but no further */
+    padding: 15px 10px 15px 20px;
+}
+
+#MainContent {
+    background-color: #ffffff;
+    display: block;
+    margin: 0 20px; 0 250px;
+    padding: 25px !important;
+	min-height: 100%;
+	min-height: 100vh;
+}
+
+.boxyPadding {
+    min-height: 100%;
+    min-height: 100vh;
+}
+
+
+#greenRow {
+    background-color: #32955B;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Trebuchet MS, verdana, arial, helveitca, sans serif;
+    line-height: 100%;
+    padding-top: 40px;
+}
+
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Trebuchet MS, verdana, arial, helveitca, sans serif;
+    padding-top: 18px;
+}
+
+p {
+    margin-bottom: 18px;
+    margin-top: 0;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+a.header:link {
+    text-decoration: none;
+    color: #CCCCCC;
+    font-size: medium;
+}
+
+a.header:visited {
+    text-decoration: none;
+    font-size: medium;
+    color: #cccccc;
+}
+
+a.header:hover {
+    text-decoration: none;
+    color: #fff;
+    font-size: medium;
+    font-weight: normal;
+}
+
+a.header:active {
+    text-decoration: none;
+    font-size: medium;
+    color: #fff;
+}
+
+.greenText {
+    color: #32955B;
+}
+
+.underline {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.AndreaFooter {
+    text-align: center;
+    background-color: #517291;
+    font-size: 10px;
+    color: #CCCCCC;
+    width: 100%;
+    width: 100vw;
+    min-height: 80px;
+    padding-top: 20px;
+}
+
+#header {
+    background-color: #cccccc;
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.pictureCaption {
+    padding: 10px 35px 10px 35px;
+    font-size: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.centerPic {
+    margin-left: 75px;
+}
+
+.hiddenPic {
+    display: none;
+}
+
+#menuBox {
+    background-color: #7cafde;
+    width: 220px;
+    margin: 20px auto;
+    padding: 0;
+    background-image: url(../images/menuBack.jpg);
+    background-repeat: repeat-y;
+    text-align: left;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+#menuBoxNoBack {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 0;
+    text-align: left;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+
+
+#menuBox a {
+    font-size: 14px;
+}
+
+#menuPadding {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+#quoteBox {
+    background-color: #7cafde;
+    width: 200px;
+    margin: 20px auto;
+    padding: 0;
+    background-image: url(../images/quoteBack.jpg);
+    background-repeat: repeat-y;
+    font-size: 12px;
+    line-height: 150% !important;
+}
+
+
+#quotePadding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu {
+    display: block;
+}
+
+    .menu:hover {
+        background-color: #517291;
+        max-width: 160px;
+        display: block;
+        color: #ffffff;
+    }
+
+.show4-mobile {
+    display: none !important;
+}
+
+
+
+
+@media screen and (min-width: 720px) {
+    .boxyPadding {
+        padding: 0 40px;
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+
+    .menuBox {
+        display: block;
+        width: 100vw !important;
+        width: 100% !important;
+        background-color: #7cafde !important;
+        margin: 20px 40px !important;
+    }
+
+    .show4-mobile {
+        display: inline !important;
+    }
+
+    .hide4-mobile {
+        display: none !important;
+    }
+
+    a.hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    p.menuBox {
+        margin-bottom: 0;
+    }
+
+}
+
+
