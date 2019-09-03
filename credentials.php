@@ -9,15 +9,25 @@ include_once('header.php');
 include_once('menu.php'); 
 ?>
 
-                      
-        <div id="quoteBox">
-            <img src="images/quoteTop.jpg" alt="quote callout top" />
-            <div id="quotePadding"><br />
-               <p style="text-align: left !important; line-height: 150%">The deepest legacy will be every life that was touched and changed and every heart that was opened from the experience of his life here on earth.  That's his legacy, that's yours, that's mine.  It's how you lived and who you touched and what it meant.  That's what your legacy is.</p>
-            <div style="text-align: right;"><p>Oprah Winfrey on<br />Nelson Mandela</p></div>
-            </div>
-            <img src="images/quoteBottom.jpg" alt="quote callout bottom" />
-        </div>
+<aside id="quote-block">
+    <section>
+            <div>
+                <div class="box-topQuote">
+                    <img src="images/quoteTop.png">
+                </div>
+                <div class="box-contents">
+                    <div id="audit-trail">
+                    <p>The deepest legacy will be every life that was touched and changed and every heart that was opened from the experience of his life here on earth.  That's his legacy, that's yours, that's mine.  It's how you lived and who you touched and what it meant.  That's what your legacy is.</p>
+                    <div style="text-align: right;font-weight:bold;"><p>Oprah Winfrey on<br />Nelson Mandela</p></div>
+                    </div>
+                    <div class="box-bottomQuote" style="text-align:right">
+                    <img src="images/quoteBottom.png">
+                </div>
+                </div>
+             </div>
+    </section>
+    </aside> 
+
                 </div>
 
                 <div class="col-md-8 col-xl-9 col-lg-8 col-sm-12 col-xs-12" style="background-color: #ffffff; text-align: left;">

@@ -9,15 +9,25 @@ include_once('header.php');
 include_once('menu.php'); 
 ?>
 
-                      
-        <div id="quoteBox">
-            <img src="images/quoteTop.jpg" alt="quote callout top" />
-            <div id="quotePadding"><br />
-               <p style="text-align: left !important; line-height: 150%">There are no wrong turnings. Only paths we had not known we were meant to walk.</p>
-            <div style="text-align: right;"><p>Guy Gavriel Kay</p></div>
-            </div>
-            <img src="images/quoteBottom.jpg" alt="quote callout bottom" />
-        </div>
+<aside id="quote-block">
+    <section>
+            <div>
+                <div class="box-topQuote">
+                    <img src="images/quoteTop.png">
+                </div>
+                <div class="box-contents">
+                    <div id="audit-trail">
+                    <p>There are no wrong turnings. Only paths we had not known we were meant to walk.</p>
+                    <div style="text-align: right;font-weight:bold;"><p>Guy Gavriel Kay</p></div>
+                    </div>
+                    <div class="box-bottomQuote" style="text-align:right">
+                    <img src="images/quoteBottom.png">
+                </div>
+                </div>
+             </div>
+    </section>
+    </aside> 
+      
                 </div>
 
                 <div class="col-md-8 col-xl-9 col-lg-8 col-sm-12 col-xs-12" style="background-color: #ffffff; text-align: left;">
