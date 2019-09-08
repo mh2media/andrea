@@ -45,15 +45,18 @@ include_once('menu.php');
 
 <div class="formContainer">
 	<h4>Contact Form</h4>
-	<form action="#" name="contact_form" id=myForm>
+	<form action="mailHandler.php" name="contact_form" id="myForm" method="POST">
 		<label for="first_name">First Name:</label>
 		<input name="first_name" type="text" required placeholder="John"/>
 		<br>
 		<label for="last_name">Last Name:</label>
 		<input name="last_name" type="text" required placeholder="Doe"/>
 		<br>
-		<label for="email">Email:</label>
-		<input name="email" type="email" required placeholder="you@domain.com"/>
+		<label for="email_from">Email:</label>
+		<input name="email_from" type="email" required placeholder="you@domain.com"/>
+		<br>
+        <label for="telephone">Phone:</label>
+		<input name="telephone" type="tel" required placeholder="123-456-7890"/>
 		<br>
 		<label for="message">Message:</label><br>
 		<textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
